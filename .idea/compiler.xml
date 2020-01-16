@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="config-server" />
+        <module name="eureka-server" />
+        <module name="hystrix-dashboard" />
+        <module name="product-data-service" />
+        <module name="product-view-service-feign" />
+        <module name="product-view-service-ribbon" />
+        <module name="springcloud" />
+        <module name="turbine" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-tt" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

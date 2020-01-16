@@ -1,0 +1,24 @@
+#server:
+#  port: 6060
+
+spring:
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled:  true
+        serviceId:  config-server #配置服务器,在eureka server 里的服务名称
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8080/eureka/
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
